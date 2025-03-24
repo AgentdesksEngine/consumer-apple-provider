@@ -49,15 +49,15 @@
                 
                 const table = document.getElementById('json-table');
                 table.innerHTML = `
-                    <tr><th>App Group</th><th>Description</th><th>${data.app_group.description}</th></tr>
-                    <tr><td></td><td>Identifier</td><td>${data.app_group.identifier}</td></tr>
-                    <tr><th>App ID</th><th>Description</th><th>${data.app_id.desription}</th></tr>
-                    <tr><td></td><td>Bundle ID</td><td>${data.app_id.bundle_id}</td></tr>
-                    <tr><th>Notification Service App ID</th><th>Description</th><th>${data.notification_app_id.desription}</th></tr>
-                    <tr><td></td><td>Bundle ID</td><td>${data.notification_app_id.bundle_id}</td></tr>
-                    <tr><th>App Provisioning Profile</th><th>Provisioning Profile Name</th><th>${data.provisioning_profile.app}</th></tr>
-                    <tr><th>Notification Service Provisioning Profile</th><th>Provisioning Profile Name</th><th>${data.provisioning_profile.notification_app}</th></tr>
-                    <tr><th>Key</th><th>Key Name</th><th>${data.key_name}</th></tr>
+                    <tr><th>App Group</th><th>Description</th><td>${data.app_group.description}</td></tr>
+                    <tr><th></td><td>Identifier</th><td>${data.app_group.identifier}</td></tr>
+                    <tr><th>App ID</th><th>Description</th><td>${data.app_id.desription}</td></tr>
+                    <tr><th></td><td>Bundle ID</th><td>${data.app_id.bundle_id}</td></tr>
+                    <tr><th>Notification Service App ID</th><th>Description</th><td>${data.notification_app_id.desription}</td></tr>
+                    <tr><th></td><td>Bundle ID</th><td>${data.notification_app_id.bundle_id}</td></tr>
+                    <tr><th>App Provisioning Profile</th><th>Provisioning Profile Name</th><td>${data.provisioning_profile.app}</td></tr>
+                    <tr><th>Notification Service Provisioning Profile</th><th>Provisioning Profile Name</th><td>${data.provisioning_profile.notification_app}</td></tr>
+                    <tr><th>Key</th><th>Key Name</th><td>${data.key_name}</td></tr>
                 `;
             } catch (error) {
                 document.getElementById('title').textContent = "Error loading JSON: " + error.message;
