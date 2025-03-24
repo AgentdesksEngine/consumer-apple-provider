@@ -1,0 +1,20 @@
+{ 
+    "name" : "Luxury Coast Realty",
+    "app_group" : {
+        "description" : "Luxury Coast App Group",
+        "identifier" : "group.radiusagent.luxury-coast"
+    },
+    "app_id" : {
+        "desription" : "Luxury Coast App",
+        "bundle_id" : "com.radiusagent.luxury-coast"
+    },
+    "notification_app_id" : {
+        "desription" : "Luxury Coast Notification",
+        "bundle_id" : "com.radiusagent.luxury-coast.notification"
+    },
+    "provisioning_profile" : {
+        "app" : "Luxury Coast App",
+        "notification_app" : "Luxury Coast Notification"
+    },
+    "key_name" : "Radius API Key"
+}

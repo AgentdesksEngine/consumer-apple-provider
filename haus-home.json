@@ -1,0 +1,20 @@
+{ 
+    "name" : "Haus + Home",
+    "app_group" : {
+        "description" : "Haus Home App Group",
+        "identifier" : "group.radiusagent.haus-home"
+    },
+    "app_id" : {
+        "desription" : "Haus Home App",
+        "bundle_id" : "com.radiusagent.haus-home"
+    },
+    "notification_app_id" : {
+        "desription" : "Haus Home Notification",
+        "bundle_id" : "com.radiusagent.haus-home.notification"
+    },
+    "provisioning_profile" : {
+        "app" : "Haus Home App",
+        "notification_app" : "Haus Home Notification"
+    },
+    "key_name" : "Radius API Key"
+}

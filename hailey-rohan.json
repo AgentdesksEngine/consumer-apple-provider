@@ -1,0 +1,20 @@
+{ 
+    "name" : "Hailey Rohan (Individual agent)",
+    "app_group" : {
+        "description" : "Hailey Rohan Group",
+        "identifier" : "group.radiusagent.hailey-rohan"
+    },
+    "app_id" : {
+        "desription" : "Hailey Rohan App",
+        "bundle_id" : "com.radiusagent.hailey-rohan"
+    },
+    "notification_app_id" : {
+        "desription" : "Hailey Rohan Notification",
+        "bundle_id" : "com.radiusagent.hailey-rohan.notification"
+    },
+    "provisioning_profile" : {
+        "app" : "Hailey Rohan App",
+        "notification_app" : "Hailey Rohan Notification"
+    },
+    "key_name" : "Radius API Key"
+}

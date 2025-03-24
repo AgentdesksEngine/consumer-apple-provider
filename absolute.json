@@ -1,0 +1,20 @@
+{ 
+    "name" : "Absolute RE",
+    "app_group" : {
+        "description" : "Absolute RE Group",
+        "identifier" : "group.radiusagent.absolute-re"
+    },
+    "app_id" : {
+        "desription" : "Absolute RE App",
+        "bundle_id" : "com.radiusagent.absolute-re"
+    },
+    "notification_app_id" : {
+        "desription" : "Absolute RE Notification",
+        "bundle_id" : "com.radiusagent.absolute-re.notification"
+    },
+    "provisioning_profile" : {
+        "app" : "Absolute RE App",
+        "notification_app" : "Absolute RE Notification"
+    },
+    "key_name" : "Radius API Key"
+}
