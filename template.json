@@ -1,0 +1,20 @@
+{ 
+    "name" : "",
+    "app_group" : {
+        "description" : "",
+        "identifier" : ""
+    },
+    "app_id" : {
+        "desription" : "",
+        "bundle_id" : ""
+    },
+    "notification_app_id" : {
+        "desription" : "",
+        "bundle_id" : ""
+    },
+    "provisioning_profile" : {
+        "app" : "",
+        "notification_app" : ""
+    },
+    "key_name" : "Radius API Key"
+}
