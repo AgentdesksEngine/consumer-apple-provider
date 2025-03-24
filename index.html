@@ -17,6 +17,14 @@
         th {
             background-color: #f2f2f2;
         }
+        td:nth-child(3) {
+            font-size: 14px; /* Fixed font size for third column */
+            font-family: monospace; /* Fixed-width font */
+        }
+        td:nth-child(2) {
+            font-size: 14px; /* Fixed font size for third column */
+            font-family: monospace; /* Fixed-width font */
+        }
     </style>
 </head>
 <body>
@@ -49,12 +57,33 @@
                 
                 const table = document.getElementById('json-table');
                 table.innerHTML = `
-                    <tr><th>App Group</th><th>Description</th><td>${data.app_group.description}</td></tr>
-                    <tr><th></td><td>Identifier</th><td>${data.app_group.identifier}</td></tr>
-                    <tr><th>App ID</th><th>Description</th><td>${data.app_id.desription}</td></tr>
-                    <tr><th></td><td>Bundle ID</th><td>${data.app_id.bundle_id}</td></tr>
-                    <tr><th>Notification Service App ID</th><th>Description</th><td>${data.notification_app_id.desription}</td></tr>
-                    <tr><th></td><td>Bundle ID</th><td>${data.notification_app_id.bundle_id}</td></tr>
+                    <tr>
+                        <th rowspan=2>App Group</th>
+                        <th>Description</th>
+                        <td>${data.app_group.description}</td>
+                    </tr>
+                    <tr>
+                        <th>Identifier</th>
+                        <td>${data.app_group.identifier}</td>
+                    </tr>
+                    <tr>
+                        <th rowspan=2>App ID</th>
+                        <th>Description</th>
+                        <td>${data.app_id.desription}</td>
+                    </tr>
+                    <tr>
+                        <th>Bundle ID</th>
+                        <td>${data.app_id.bundle_id}</td>
+                    </tr>
+                    <tr>
+                        <th rowspan=2>Notification Service App ID</th>
+                        <th>Description</th>
+                        <td>${data.notification_app_id.desription}</td>
+                    </tr>
+                    <tr>
+                        <th>Bundle ID</th>
+                        <td>${data.notification_app_id.bundle_id}</td>
+                    </tr>
                     <tr><th>App Provisioning Profile</th><th>Provisioning Profile Name</th><td>${data.provisioning_profile.app}</td></tr>
                     <tr><th>Notification Service Provisioning Profile</th><th>Provisioning Profile Name</th><td>${data.provisioning_profile.notification_app}</td></tr>
                     <tr><th>Key</th><th>Key Name</th><td>${data.key_name}</td></tr>

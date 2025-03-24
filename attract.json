@@ -1,7 +1,7 @@
 { 
     "name" : "Attract Real Estate",
     "app_group" : {
-        "description" : "Attract RE App",
+        "description" : "Attract RE Group",
         "identifier" : "group.radiusagent.attract-re"
     },
     "app_id" : {
