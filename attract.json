@@ -1,0 +1,20 @@
+{ 
+    "name" : "Attract Real Estate",
+    "app_group" : {
+        "description" : "Attract RE App",
+        "identifier" : "group.radiusagent.attract-re"
+    },
+    "app_id" : {
+        "desription" : "Attract RE App",
+        "bundle_id" : "com.radiusagent.attract-re"
+    },
+    "notification_app_id" : {
+        "desription" : "Attract RE Notification",
+        "bundle_id" : "com.radiusagent.attract-re.notification"
+    },
+    "provisioning_profile" : {
+        "app" : "Attract RE App",
+        "notification_app" : "Attract RE Notification"
+    },
+    "key_name" : "Radius API Key"
+}

@@ -1,0 +1,20 @@
+{ 
+    "name" : "Tuffnell & Associates",
+    "app_group" : {
+        "description" : "Tuffnell App Group",
+        "identifier" : "group.radiusagent.tuffnell-associates"
+    },
+    "app_id" : {
+        "desription" : "Tuffnell App",
+        "bundle_id" : "com.radiusagent.tuffnell-associates"
+    },
+    "notification_app_id" : {
+        "desription" : "Tuffnell Notification",
+        "bundle_id" : "com.radiusagent.tuffnell-associates.notification"
+    },
+    "provisioning_profile" : {
+        "app" : "Tuffnell App",
+        "notification_app" : "Tuffnell Notification"
+    },
+    "key_name" : "Radius API Key"
+}

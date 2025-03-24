@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-    <h1 id="title">JSON Data Viewer</h1>
+    <h1 id="title">Apple App creation details</h1>
     <table>
         <tbody id="json-table"></tbody>
     </table>
@@ -32,12 +32,13 @@
         }
 
         async function loadJson() {
-            const jsonFile = getQueryParam('file');
-            if (!jsonFile) {
+            const fileName = getQueryParam('file');
+            if (!fileName) {
                 document.getElementById('title').textContent = "No JSON file specified in the query parameter.";
                 return;
             }
-
+            const jsonFile = `${fileName}.json`;
+            
             try {
                 const response = await fetch(jsonFile);
                 if (!response.ok) throw new Error('JSON file not found');
