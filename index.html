@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">JSON Viewer</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">JSON Data Viewer</h1>
+    <table>
+        <tbody id="json-table"></tbody>
+    </table>
+
+    <script>
+        async function loadJson() {
+            const path = window.location.pathname.substring(1);
+            if (!path) {
+                document.getElementById('title').textContent = "No JSON file specified in the URL.";
+                return;
+            }
+
+            const jsonFile = `${path}.json`;
+            try {
+                const response = await fetch(jsonFile);
+                if (!response.ok) throw new Error('JSON file not found');
+                const data = await response.json();
+
+                document.getElementById('page-title').textContent = data.name || "JSON Viewer";
+                document.getElementById('title').textContent = data.name || "JSON Data Viewer";
+                
+                const table = document.getElementById('json-table');
+                table.innerHTML = `
+                    <tr><th>App Group</th><th>Description</th><th>${data.app_group.description}</th></tr>
+                    <tr><td></td><td>Identifier</td><td>${data.app_group.identifier}</td></tr>
+                    <tr><th>App ID</th><th>Description</th><th>${data.app_id.desription}</th></tr>
+                    <tr><td></td><td>Bundle ID</td><td>${data.app_id.bundle_id}</td></tr>
+                    <tr><th>Notification Service App ID</th><th>Description</th><th>${data.notification_app_id.desription}</th></tr>
+                    <tr><td></td><td>Bundle ID</td><td>${data.notification_app_id.bundle_id}</td></tr>
+                    <tr><th>App Provisioning Profile</th><th>Provisioning Profile Name</th><th>${data.provisioning_profile.app}</th></tr>
+                    <tr><th>Notification Service Provisioning Profile</th><th>Provisioning Profile Name</th><th>${data.provisioning_profile.notification_app}</th></tr>
+                    <tr><th>Key</th><th>Key Name</th><th>${data.key_name}</th></tr>
+                `;
+            } catch (error) {
+                document.getElementById('title').textContent = "Error loading JSON: " + error.message;
+            }
+        }
+
+        loadJson();
+    </script>
+</body>
+</html>
