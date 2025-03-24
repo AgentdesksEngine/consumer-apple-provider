@@ -26,14 +26,17 @@
     </table>
 
     <script>
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
         async function loadJson() {
-            const path = window.location.pathname.substring(1);
-            if (!path) {
-                document.getElementById('title').textContent = "No JSON file specified in the URL.";
+            const jsonFile = getQueryParam('file');
+            if (!jsonFile) {
+                document.getElementById('title').textContent = "No JSON file specified in the query parameter.";
                 return;
             }
-
-            const jsonFile = `https://raw.githubusercontent.com/agentdesksengine/consumer-apple-provider/main/${path}.json`;
 
             try {
                 const response = await fetch(jsonFile);
