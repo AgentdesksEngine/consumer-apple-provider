@@ -32,7 +32,7 @@
         }
 
         async function loadJson() {
-            const fileName = getQueryParam('file');
+            const fileName = getQueryParam('team');
             if (!fileName) {
                 document.getElementById('title').textContent = "No JSON file specified in the query parameter.";
                 return;
