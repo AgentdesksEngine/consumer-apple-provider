@@ -2,7 +2,7 @@
     "name" : "Tuffnell & Associates",
     "app_group" : {
         "description" : "Tuffnell App Group",
-        "identifier" : "group.radiusagent.tuffnell-associates"
+        "identifier" : "group.com.radiusagent.tuffnell-associates"
     },
     "app_id" : {
         "desription" : "Tuffnell App",

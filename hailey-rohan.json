@@ -2,7 +2,7 @@
     "name" : "Hailey Rohan (Individual agent)",
     "app_group" : {
         "description" : "Hailey Rohan Group",
-        "identifier" : "group.radiusagent.hailey-rohan"
+        "identifier" : "group.com.radiusagent.hailey-rohan"
     },
     "app_id" : {
         "desription" : "Hailey Rohan App",

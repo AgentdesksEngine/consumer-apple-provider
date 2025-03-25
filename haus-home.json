@@ -2,7 +2,7 @@
     "name" : "Haus + Home",
     "app_group" : {
         "description" : "Haus Home App Group",
-        "identifier" : "group.radiusagent.haus-home"
+        "identifier" : "group.com.radiusagent.haus-home"
     },
     "app_id" : {
         "desription" : "Haus Home App",

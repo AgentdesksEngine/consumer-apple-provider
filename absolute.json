@@ -2,7 +2,7 @@
     "name" : "Absolute RE",
     "app_group" : {
         "description" : "Absolute RE Group",
-        "identifier" : "group.radiusagent.absolute-re"
+        "identifier" : "group.com.radiusagent.absolute-re"
     },
     "app_id" : {
         "desription" : "Absolute RE App",
