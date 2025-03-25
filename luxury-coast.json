@@ -2,7 +2,7 @@
     "name" : "Luxury Coast Realty",
     "app_group" : {
         "description" : "Luxury Coast App Group",
-        "identifier" : "group.radiusagent.luxury-coast"
+        "identifier" : "group.com.radiusagent.luxury-coast"
     },
     "app_id" : {
         "desription" : "Luxury Coast App",
