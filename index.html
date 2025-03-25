@@ -25,6 +25,17 @@
             font-size: 14px; /* Fixed font size for third column */
             font-family: monospace; /* Fixed-width font */
         }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .highlight-note {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: yellow;
+            display: inline-block;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +43,8 @@
     <table>
         <tbody id="json-table"></tbody>
     </table>
+
+    <div class="highlight-note">The highlighted item should be entered exactly as mentioned here</div>
 
     <script>
         function getQueryParam(name) {
@@ -64,7 +77,7 @@
                     </tr>
                     <tr>
                         <th>Identifier</th>
-                        <td>${data.app_group.identifier}</td>
+                        <td class="highlight">${data.app_group.identifier}</td>
                     </tr>
                     <tr>
                         <th rowspan=2>App ID</th>
@@ -73,7 +86,7 @@
                     </tr>
                     <tr>
                         <th>Bundle ID</th>
-                        <td>${data.app_id.bundle_id}</td>
+                        <td class="highlight">${data.app_id.bundle_id}</td>
                     </tr>
                     <tr>
                         <th rowspan=2>Notification Service App ID</th>
@@ -82,7 +95,7 @@
                     </tr>
                     <tr>
                         <th>Bundle ID</th>
-                        <td>${data.notification_app_id.bundle_id}</td>
+                        <td class="highlight">${data.notification_app_id.bundle_id}</td>
                     </tr>
                     <tr><th>App Provisioning Profile</th><th>Provisioning Profile Name</th><td>${data.provisioning_profile.app}</td></tr>
                     <tr><th>Notification Service Provisioning Profile</th><th>Provisioning Profile Name</th><td>${data.provisioning_profile.notification_app}</td></tr>
