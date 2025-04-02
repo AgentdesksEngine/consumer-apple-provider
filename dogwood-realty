@@ -1,0 +1,20 @@
+{ 
+    "name" : "Dogwood Realty",
+    "app_group" : {
+        "description" : "Dogwood Realty App Group",
+        "identifier" : "group.com.radiusagent.dogwood-realty"
+    },
+    "app_id" : {
+        "desription" : "Dogwood Realty App",
+        "bundle_id" : "com.radiusagent.dogwood-realty"
+    },
+    "notification_app_id" : {
+        "desription" : "Dogwood Realty Notification App",
+        "bundle_id" : "com.radiusagent.dogwood-realty.notification"
+    },
+    "provisioning_profile" : {
+        "app" : "Dogwood Realty App",
+        "notification_app" : "Dogwood Realty Notification"
+    },
+    "key_name" : "Radius API Key"
+}
