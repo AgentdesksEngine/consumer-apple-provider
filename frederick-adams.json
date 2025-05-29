@@ -1,0 +1,20 @@
+{ 
+    "name" : "Frederick Adams",
+    "app_group" : {
+        "description" : "Frederick Adams Group",
+        "identifier" : "group.com.radiusagent.frederick-adams"
+    },
+    "app_id" : {
+        "desription" : "Frederick Adams App",
+        "bundle_id" : "com.radiusagent.frederick-adams"
+    },
+    "notification_app_id" : {
+        "desription" : "Frederick Adams Notification",
+        "bundle_id" : "com.radiusagent.frederick-adams.notification"
+    },
+    "provisioning_profile" : {
+        "app" : "Frederick Adams App",
+        "notification_app" : "Frederick Adams Notification"
+    },
+    "key_name" : "Radius API Key"
+}
