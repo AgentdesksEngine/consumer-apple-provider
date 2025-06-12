@@ -1,0 +1,20 @@
+{ 
+    "name" : "Point of View Properties - Julie Rose",
+    "app_group" : {
+        "description" : "Point of View App Group",
+        "identifier" : "group.com.radiusagent.point-of-view"
+    },
+    "app_id" : {
+        "desription" : "Point of View App",
+        "bundle_id" : "com.radiusagent.point-of-view"
+    },
+    "notification_app_id" : {
+        "desription" : "Point of View Notification",
+        "bundle_id" : "com.radiusagent.point-of-view.notification"
+    },
+    "provisioning_profile" : {
+        "app" : "Point of View App",
+        "notification_app" : "Point of View Notification"
+    },
+    "key_name" : "Radius API Key"
+}
